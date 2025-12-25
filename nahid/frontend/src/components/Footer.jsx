@@ -27,7 +27,8 @@ const Footer = () => {
     };
 
     return (
-        <footer className="bg-black text-white border-t border-white/20">
+        <footer className="bg-black text-white ">
+            <div className="border-t border-white/20 px-3"></div>
             <div className="max-w-6xl mx-auto pt-10 flex flex-col items-center gap-3">
 
                 <div className="flex flex-col items-center">
@@ -112,7 +113,7 @@ const Footer = () => {
                     </div>
                     <div className="font-['Fjalla_One'] text-3xl text-red-700">ٱلْحَمْدُ لِلّٰهِ</div>
                 </div>
-                <div className="flex justify-between items-center w-full">
+                <div className="flex justify-between items-center w-full py-4 px-8">
                     <div className="text-[11px]">© 2025 NAHID. ALL RIGHTS RESERVED</div>
                     <div><TopButton className="flex items-start" /></div>
                 </div>

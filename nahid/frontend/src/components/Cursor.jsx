@@ -43,6 +43,13 @@ const Cursor = () => {
                 cursor.style.mixBlendMode = "normal"
                 cursor.style.transform = cursor.style.transform.replace(" scale(1.35)", "")
             }
+
+            if (e.target.closest(".reveal-card")) {
+                cursor.style.transform += " scale(2)";
+            } else {
+                cursor.style.transform = cursor.style.transform.replace(" scale(2)", "");
+            }
+
         }
 
         document.addEventListener("mousemove", handleMouseMove)
