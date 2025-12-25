@@ -6,7 +6,7 @@ const Hero = () => {
             <div className="border-b border-white/20 flex items-end justify-start h-full p-8 text-5xl font-['Fjalla_One']">
                 Nahid<br />Azad
             </div>
-            <div className="relative border-l border-b border-white/90 bg-cover bg-center transition-transform duration-700 ease-out hover:scale-110" style={{ backgroundImage: `url(${contour})` }}>
+            <div className="relative border-l border-b border-white/100 hover:border-red-700  bg-cover bg-center transition-all duration-700 ease-out hover:scale-110" style={{ backgroundImage: `url(${contour})` }}>
                 <div className="absolute inset-0 bg-black/90"></div>
                 <div className="relative flex items-end justify-start h-full p-8 text-2xl">
                     <div className="flex flex-col">

@@ -1,1 +1,33 @@
 @import "tailwindcss";
+
+
+/* HOVER-TREMBLE EFFECT */
+/* @keyframes tremble {
+    25% {
+        transform: translate(0.25px, 0);
+    }
+
+    50% {
+        transform: translate(-0.25px, 0);
+    }
+
+    75% {
+        transform: translate(0.25px, 0);
+    }
+}
+
+
+
+p:hover,
+a:hover,
+span:hover,
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+h6:hover,
+li:hover,
+button:hover {
+    animation: tremble 0.45s infinite;
+} */

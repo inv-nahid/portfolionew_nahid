@@ -105,7 +105,7 @@ const Footer = () => {
                 </div>
 
 
-                <div className="flex gap-10 mb-1">
+                <div className="flex gap-5 mb-1">
                     {/* Current time */}
                     <div className="text-red-700 text-sm tracking-wide px-2 py-2 uppercase">
                         {time.toLocaleTimeString()}

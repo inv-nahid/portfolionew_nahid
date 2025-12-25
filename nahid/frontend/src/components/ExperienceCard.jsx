@@ -1,3 +1,5 @@
+import CertificateButton from "./CertificateButton"
+
 const ExperienceCard = ({
     id,
     role,
@@ -17,12 +19,12 @@ const ExperienceCard = ({
             </h3>
 
             {/* Company + Duration */}
-            <div className="text-white/70 flex">
+            <div className="text-white/70 flex justify-between items-center">
                 <div>
                     <p>{company}</p>
                     <p className="text-sm">{duration}</p>
                 </div>
-                <a href="" className="hover:text-red-500 text-sm transition-colors duration-500 mx-auto border flex items-center px-3">View Certificate</a>
+                <CertificateButton href="#">View Certificate</CertificateButton>
 
             </div>
 
