@@ -40,42 +40,42 @@ const Footer = () => {
 
                 <div className="flex gap-6 text-white/60 ">
                     <a
-                        href="https://github.com/yourusername"
+                        href="https://github.com/inv-nahid"
                         target="_blank"
                         rel="noreferrer"
-                        className="flex items-center gap-2 hover:text-white transition-colors"
+                        className="flex items-center gap-2 hover:text-white transition-colors duration-600"
                     >
-                        <FaGithub className="hover:text-green-600 transition-colors duration-500" size={25} />
+                        <FaGithub className="hover:text-green-600 transition-colors duration-500" size={24} />
                         <p className="text-sm">GitHub</p>
                     </a>
 
                     <a
-                        href="https://linkedin.com/in/yourusername"
+                        href="https://www.linkedin.com/in/tagnahid"
                         target="_blank"
                         rel="noreferrer"
                         className="flex items-center gap-2 hover:text-white transition-colors"
                     >
-                        <FaLinkedin className="hover:text-blue-500 transition-colors duration-500" size={25} />
+                        <FaLinkedin className="hover:text-blue-500 transition-colors duration-500" size={24} />
                         <p className="text-sm">LinkedIn</p>
                     </a>
 
                     <a
-                        href="https://twitter.com/yourusername"
+                        href="https://x.com/xizt_7"
                         target="_blank"
                         rel="noreferrer"
                         className="flex items-center gap-2 hover:text-white transition-colors"
                     >
-                        <FaTwitter className="hover:text-blue-400 transition-colors duration-500" size={25} />
+                        <FaTwitter className="hover:text-blue-400 transition-colors duration-500" size={24} />
                         <p className="text-sm">Twitter</p>
                     </a>
 
                     <a
-                        href="https://instagram.com/yourusername"
+                        href="https://www.instagram.com/xizt_07"
                         target="_blank"
                         rel="noreferrer"
                         className="flex items-center gap-2 hover:text-white transition-colors"
                     >
-                        <FaInstagram className="hover:text-pink-700 transition-colors duration-500" size={25} />
+                        <FaInstagram className="hover:text-pink-700 transition-colors duration-500" size={24} />
                         <p className="text-sm">Instagram</p>
                     </a>
                 </div>
@@ -86,13 +86,13 @@ const Footer = () => {
             flex items-center gap-4
             border border-white/20
             hover:border-red-700
-            hover:text-red-700
             transition-colors
+            duration-800
             px-5 py-3 mb-8 mt-8
             text-white/70"
                     data-cursor="invert"
                 >
-                    <span className="text-sm tracking-wide hover:border-red-700 transition-colors duration-500">
+                    <span className="text-sm tracking-wide">
                         {copied ? "Email copied" : "Copy my email"}
                     </span>
 

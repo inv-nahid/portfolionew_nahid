@@ -9,7 +9,7 @@ const ExperienceCard = ({
     tech,
 }) => {
     return (
-        <div className="p-10 flex flex-col gap-6 border border-white/20 lg:py-20 transition-transform duration-700 ease-out hover:scale-105">
+        <div className="p-10 flex flex-col gap-6 border border-white/20 lg:py-20 transition-all duration-700 ease-out hover:scale-105 hover:border-red-700 ">
             {/* Index */}
             <span className="text-sm text-white/40">[{id}]</span>
 

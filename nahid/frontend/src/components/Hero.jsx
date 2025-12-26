@@ -1,8 +1,8 @@
 import contour from "../assets/contour.png"
-import img1 from "../assets/limitless.png";
+import img1 from "../assets/homeassist.png";
 import img2 from "../assets/homeassist.png";
-import img3 from "../assets/limitless.png";
-import img4 from "../assets/limitless.png";
+import img3 from "../assets/homeassist.png";
+import img4 from "../assets/homeassist.png";
 
 
 import RevealCard from "./Revealcard"
@@ -25,7 +25,7 @@ const Hero = () => {
             <div>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </div>
-            <div className="border-l border-white/20 grid grid-cols-2 p-4 gap-4 flex justify-center items-center ">
+            <div className="border-l border-white/20 grid grid-cols-2 p-5 gap-5 flex justify-center items-center ">
                 {[img1, img2, img3, img4].map((img, i) => (
                     <RevealCard key={i} image={img} />
                 ))}
