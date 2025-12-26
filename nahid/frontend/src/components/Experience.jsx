@@ -23,25 +23,22 @@ const experiences = [
 
 const Experience = () => {
     return (
-        <section className="pt-30 pb-7">
-            <h1 className="inline-block text-5xl font-['Fjalla_One'] hover:text-red-500 transition-colors duration-500 mb-4">
+        <section className="pt-16 sm:pt-24 pb-8 px-3 sm:px-6">
+            <h1 className="inline-block text-3xl sm:text-5xl font-['Fjalla_One'] hover:text-red-500 transition-colors duration-500 mb-6">
                 EXPERIENCE
             </h1>
-            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
                 {experiences.map((exp, index) => (
                     <ExperienceCard
                         key={index}
-                        id={exp.id}
-                        role={exp.role}
-                        company={exp.company}
-                        duration={exp.duration}
-                        description={exp.description}
-                        tech={exp.tech}
+                        {...exp}
                     />
                 ))}
             </div>
         </section>
-    )
-}
+    );
+};
+
 
 export default Experience

@@ -4,6 +4,9 @@ const RevealCard = ({ image }) => {
     const cardRef = useRef(null);
 
     const handleMove = (e) => {
+        // Disable effect on touch devices
+        if (!cardRef.current || window.matchMedia("(hover: none)").matches) return;
+
         const rect = cardRef.current.getBoundingClientRect();
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
@@ -21,23 +24,25 @@ const RevealCard = ({ image }) => {
         relative overflow-hidden
         h-full
         cursor-none
-      "
+        sm:cursor-none"
         >
             {/* COLOR IMAGE */}
             <img
                 src={image}
                 className="absolute inset-0 w-full h-full object-cover"
+                alt=""
             />
 
             {/* BLACK & WHITE MASK */}
             <img
                 src={image}
                 className="
-          absolute inset-0 w-full h-full object-cover
-          grayscale
-          [mask-image:radial-gradient(circle_120px_at_var(--x)_var(--y),transparent_0%,black_60%)]
-          [mask-repeat:no-repeat]
-        "
+            absolute inset-0 w-full h-full object-cover
+            grayscale
+            hidden sm:block
+            [mask-image:radial-gradient(circle_120px_at_var(--x)_var(--y),transparent_0%,black_60%)]
+            [mask-repeat:no-repeat]"
+                alt=""
             />
         </div>
     );
