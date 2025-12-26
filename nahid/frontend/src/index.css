@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 
 /* HOVER-TREMBLE EFFECT */
 /* @keyframes tremble {
