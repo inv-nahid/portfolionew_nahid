@@ -30,7 +30,7 @@ const FooterReveal = () => {
                     <div
                         className={`
                 w-full h-full bg-red-700 origin-top
-                transition-transform duration-[2500ms] ease-out
+                transition-transform duration-[2000ms] ease-out
                 ${visible ? "scale-y-100" : "scale-y-0"}
             `}
                     />
@@ -44,7 +44,7 @@ const FooterReveal = () => {
             mt-10 sm:mt-16
             text-lg sm:text-2xl
             tracking-wide
-            transition-all duration-900 ease-out delay-[2600ms]
+            transition-all duration-900 ease-out delay-[2000ms]
             ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"}
         `}
             >
@@ -56,7 +56,7 @@ const FooterReveal = () => {
             mt-4 sm:mt-7
             font-['Metal']
             text-sm sm:text-base
-            transition-all duration-900 ease-out delay-[2600ms]
+            transition-all duration-900 ease-out delay-[2000ms]
             ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"}
         `}
             >
@@ -67,11 +67,11 @@ const FooterReveal = () => {
                 className={`
             font-['Metal']
             text-sm sm:text-base
-            transition-all duration-900 ease-out delay-[2600ms]
+            transition-all duration-900 ease-out delay-[2000ms]
             ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"}
         `}
             >
-                When you're ready to take that first step, I'll walk it with you.
+                When you're ready to take that first step, let's talk.
             </p>
         </section>
     );

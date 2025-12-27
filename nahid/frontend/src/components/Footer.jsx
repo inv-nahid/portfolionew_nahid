@@ -44,25 +44,25 @@ const Footer = () => {
                 <div className="flex flex-wrap justify-center gap-5 text-white/60">
                     <a href="https://github.com/inv-nahid" target="_blank" rel="noreferrer"
                         className="flex items-center gap-2 hover:text-white transition-colors">
-                        <FaGithub size={22} />
+                        <FaGithub size={22} className="hover:text-green-500 transition-colors duration-700" />
                         <p className="text-sm">GitHub</p>
                     </a>
 
                     <a href="https://www.linkedin.com/in/tagnahid" target="_blank" rel="noreferrer"
                         className="flex items-center gap-2 hover:text-white transition-colors">
-                        <FaLinkedin size={22} />
+                        <FaLinkedin size={22} className="hover:text-blue-500 transition-colors duration-700" />
                         <p className="text-sm">LinkedIn</p>
                     </a>
 
                     <a href="https://x.com/xizt_7" target="_blank" rel="noreferrer"
                         className="flex items-center gap-2 hover:text-white transition-colors">
-                        <FaTwitter size={22} />
+                        <FaTwitter size={22} className="hover:text-blue-400 transition-colors duration-700" />
                         <p className="text-sm">Twitter</p>
                     </a>
 
                     <a href="https://www.instagram.com/xizt_07" target="_blank" rel="noreferrer"
                         className="flex items-center gap-2 hover:text-white transition-colors">
-                        <FaInstagram size={22} />
+                        <FaInstagram size={22} className="hover:text-pink-600 transition-colors duration-700" />
                         <p className="text-sm">Instagram</p>
                     </a>
                 </div>

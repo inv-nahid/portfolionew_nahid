@@ -33,24 +33,24 @@ export const About = () => {
 
             <InfiniteCarousel />
 
-            <div className='px-4 sm:px-6'>
-                <div className="max-w-3xl md:max-w-4xl lg:max-w-3xl mx-auto mb-50">
+            <div className=' sm:px-6'>
+                <div className="max-w-3xl md:max-w-4xl lg:max-w-3xl mx-auto mb-50 px-4">
                     <div className="mt-30 text-2xl mb-4">
                         What I like to do
                     </div>
-                    <p className='text-white/70 text-sm mb-14'>
+                    <p className='text-white/70 text-sm mb-14 text-justify [hyphens:auto]'>
                         Jack of all trades, master of none. I have a long list of unfinished side projects and stuff I enjoy in my free time.
                     </p>
                     <h1 className='mb-4 text-md'>
                         F1 Analytics app
                     </h1>
-                    <p className='text-white/70 text-sm mb-14'>
+                    <p className='text-white/70 text-sm mb-14 text-justify [hyphens:auto]'>
                         I’m currently working on an F1 analytics app using FastF1, analyzing variables like tyre behavior, weather conditions, and lap data to understand performance beyond the surface numbers. Trying to blend CS with automobile tech is a fun little endeavor that I indulge in my free time.
                     </p>
                     <h1 className='mb-4 text-md'>
                         Hobbies
                     </h1>
-                    <p className='text-white/70 text-sm'>
+                    <p className='text-white/70 text-sm text-justify [hyphens:auto]'>
                         I'm a big enthusiast of anything mechanical. Cars, Bikes, Boats, anything with an engine. I watch F1, WEC, WRC. I play mainstream pc games like Call of Duty, Assassin's Creed, Far Cry, and underrated gems like Ghost Recon, Kingdom Come and A Plague Tale. I play football, basketball and have recently taken up badminton as my next sport. I'm a Warhammer 40K geek, and I hope anyone reading this line gets the Big E reference. <br /> A lot of things have been said and done, but in the end I am what I do, not what I say I will do. Therefore,
                     </p>
                     <p className=' inline-block text-sm hover:text-red-700 transition-colors duration-500'>
@@ -59,7 +59,7 @@ export const About = () => {
                 </div>
 
                 <div className='flex  flex-col justify-center items-center'>
-                    <h1 className='text-5xl mb-20'>
+                    <h1 className='text-xl sm:text-2xl md:text-3xl lg:text-5xl mb-20 px-4'>
                         Some moments from my life..
                     </h1>
 

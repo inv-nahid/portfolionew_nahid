@@ -1,8 +1,9 @@
 import contour from "../assets/contour.png";
-import img1 from "../assets/homeassist.png";
-import img2 from "../assets/homeassist.png";
-import img3 from "../assets/homeassist.png";
-import img4 from "../assets/homeassist.png";
+import img1 from "../assets/me3.jpeg";
+import img2 from "../assets/me3.jpeg";
+import img3 from "../assets/me3.jpeg";
+import img4 from "../assets/me3.jpeg";
+import IntentFontChange from "./IntentFontChange";
 
 import RevealCard from "./Revealcard";
 
@@ -18,38 +19,46 @@ const Hero = () => {
     border-b border-white/20
     mt-10 md:mt-13"
         >
-            {/* 1️⃣ Name — always visible */}
-            <div className="border-b border-white/20 flex items-end p-6 md:p-8 text-3xl sm:text-4xl md:text-5xl font-['Fjalla_One']">
+            <div className="border-b border-white/20 flex items-end p-6 md:p-8
+            text-5xl sm:text-4xl md:text-5xl
+            font-['Fjalla_One']">
                 Nahid<br />Azad
             </div>
 
-            {/* 2️⃣ Intent block — always visible (UNCHANGED) */}
             <div
                 className="
         relative
         border-b md:border-l border-white/90
-        bg-cover bg-center
+        bg-cover bg-center 
+        transition-all duration-700 ease-out 
+        hover:scale-110 hover:border-red-600 
         min-h-[240px]"
                 style={{ backgroundImage: `url(${contour})` }}
             >
                 <div className="absolute inset-0 bg-black/90"></div>
 
-                <div className="relative flex items-end h-full p-6 md:p-8 text-lg sm:text-xl md:text-2xl">
+                <div className="relative flex h-full p-6 md:p-8
+                items-center justify-center
+                md:items-end md:justify-start
+                text-3xl sm:text-xl md:text-2xl
+                text-center md:text-left"
+                >
                     <div className="flex flex-col">
                         <span className="font-['Fjalla_One'] py-2 leading-snug">
-                            Every detail tells <br /> a story with
+                            Every Detail Tells <br /> A Story With
                         </span>
-                        <span>INTENT</span>
+                        <span>
+                            <IntentFontChange />
+                        </span>
                     </div>
                 </div>
             </div>
 
-            {/* 3️⃣ Description — hidden on mobile */}
-            <div className="hidden md:block p-6 md:p-8 text-sm text-white/70">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <div className="p-6 md:p-8 text-sm text-white/70 text-justify [hyphens:auto]">
+                I build things for the web and care about getting the details right. I don’t chase trends. I focus on making the ideas work, look intentional, and feel solid when someone actually uses them. I’m still learning, but I take what I build seriously.
             </div>
 
-            {/* 4️⃣ Reveal grid — hidden on mobile */}
+
             <div
                 className="
         hidden md:grid

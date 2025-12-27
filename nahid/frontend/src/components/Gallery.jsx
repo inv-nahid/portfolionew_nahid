@@ -11,16 +11,17 @@ import catto2 from "../assets/catto2.jpeg";
 
 const Gallery = () => {
     return (
-        <div className="">
+        <div className=" ">
 
             <div className="grid
           grid-cols-1
           sm:grid-cols-2
-          gap-4 sm:gap-6
-          auto-rows-[180px]
-          sm:auto-rows-[220px]
-          md:auto-rows-[260px]
-          lg:auto-rows-[300px]">
+          gap-4 sm:gap-8
+          auto-rows-[150px]
+          sm:auto-rows-[190px]
+          md:auto-rows-[230px]
+          lg:auto-rows-[270px]"
+            >
                 <PhotoCard className="row-span-2" src={me3} />
                 <PhotoCard className="row-span-2 " src={sgang1} />
                 <PhotoCard src={cgang2} />
