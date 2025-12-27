@@ -3,8 +3,13 @@ import { useState, useEffect } from "react"
 import MenuOpenIcon from "@mui/icons-material/MenuOpen"
 import CloseIcon from "@mui/icons-material/Close"
 
+import { useLocation } from "react-router-dom"
+
 const Navbar = () => {
     const [open, setOpen] = useState(false)
+
+    const location = useLocation()
+    const hideProjects = ["/about"].includes(location.pathname)
 
     useEffect(() => {
         document.body.style.overflow = open ? "hidden" : "auto"
@@ -22,21 +27,32 @@ const Navbar = () => {
 
                 {/* Desktop Links */}
                 <div className="hidden md:flex gap-8 text-white">
+
                     <Link to="/about" className="hover:text-red-500 transition-colors duration-500">
                         ABOUT
                     </Link>
-                    <Link to="/projects" className="hover:text-red-500 transition-colors duration-500">
-                        PROJECTS
-                    </Link>
-                    <a className="hover:text-red-500 transition-colors duration-500">
+
+                    {!hideProjects && (
+                        <a
+                            href="#projects"
+                            className="hover:text-red-500 transition-colors duration-500"
+                        >
+                            PROJECTS
+                        </a>
+                    )}
+
+                    <a href="https://github.com/inv-nahid" target="_blank" className=" hover:text-red-500 transition-colors duration-500">
                         GITHUB
                     </a>
+
                     <a className="hover:text-red-500 transition-colors duration-500">
                         RESUME
                     </a>
-                    <Link to="/blogs" className="hover:text-red-500 transition-colors duration-500">
+
+                    <Link to="#" className="hover:text-red-500 transition-colors duration-500">
                         BLOG
                     </Link>
+
                 </div>
 
                 {/* Mobile Toggle */}
@@ -44,30 +60,77 @@ const Navbar = () => {
                     className="md:hidden text-white"
                     onClick={() => setOpen(!open)}
                 >
-                    {open ? <CloseIcon fontSize="large" /> : <MenuOpenIcon fontSize="large" />}
+                    <div className="relative w-10 h-10 flex items-center justify-center">
+                        <MenuOpenIcon
+                            sx={{
+                                position: "absolute",
+                                transition: "all 300ms ease-out",
+                                transform: open
+                                    ? "scale(0.75) rotate(45deg)"
+                                    : "scale(1) rotate(0deg)",
+                                opacity: open ? 0 : 1,
+                            }}
+                            fontSize="medium"
+                            className="hover:text-red-500 transition-colors duration-500"
+                        />
+
+                        <CloseIcon
+                            sx={{
+                                position: "absolute",
+                                transition: "all 300ms ease-out",
+                                transform: open
+                                    ? "scale(1) rotate(0deg)"
+                                    : "scale(0.75) rotate(-45deg)",
+                                opacity: open ? 1 : 0,
+                            }}
+                            fontSize="medium"
+                            className="hover:text-red-500 transition-colors duration-500"
+                        />
+                    </div>
+
                 </button>
             </nav>
 
             {/* Mobile Menu */}
-            {open && (
-                <div className="fixed top-18 left-0 w-full bg-black/90 backdrop-blur-sm border-b border-white/10 md:hidden flex flex-col items-center gap-6 py-6 font-['Fjalla_One'] tracking-widest text-white z-40">
-                    <Link to="/about" onClick={() => setOpen(false)}>
-                        ABOUT
-                    </Link>
-                    <Link to="/projects" onClick={() => setOpen(false)}>
+
+            <div
+                className={`
+                    fixed top-18 left-0 w-full
+                    bg-black/80 backdrop-blur-[1px]
+                    border-b border-white/10
+                    md:hidden
+                    flex flex-col items-center gap-6 py-6
+                    font-['Fjalla_One'] tracking-widest text-white
+                    z-40
+                    transition-all duration-400 ease-out
+                    ${open
+                        ? "opacity-100 translate-y-0 pointer-events-auto"
+                        : "opacity-0 -translate-y-4 pointer-events-none"}
+                    `}
+            >
+
+                <Link to="/about" onClick={() => setOpen(false)} className="hover:text-red-500 transition-colors duration-500">
+                    ABOUT
+                </Link>
+                {!hideProjects && (
+                    <a
+                        href="#projects"
+                        className="hover:text-red-500 transition-colors duration-500"
+                    >
                         PROJECTS
-                    </Link>
-                    <a onClick={() => setOpen(false)}>
-                        GITHUB
                     </a>
-                    <a onClick={() => setOpen(false)}>
-                        RESUME
-                    </a>
-                    <Link to="/blogs" onClick={() => setOpen(false)}>
-                        BLOG
-                    </Link>
-                </div>
-            )}
+                )}
+                <a onClick={() => setOpen(false)} className="hover:text-red-500 transition-colors duration-500">
+                    GITHUB
+                </a>
+                <a onClick={() => setOpen(false)} className="hover:text-red-500 transition-colors duration-500">
+                    RESUME
+                </a>
+                <Link to="/blogs" onClick={() => setOpen(false)} className="hover:text-red-500 transition-colors duration-500">
+                    BLOG
+                </Link>
+            </div>
+
         </>
     )
 }

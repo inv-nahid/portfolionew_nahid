@@ -54,7 +54,7 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className="p-6 md:p-8 text-sm text-white/70 text-justify [hyphens:auto]">
+            <div className="p-6 md:p-8 text-sm flex lg:justify-self-start lg:w-3/4 text-white/70 text-justify [hyphens:auto]">
                 I build things for the web and care about getting the details right. I don’t chase trends. I focus on making the ideas work, look intentional, and feel solid when someone actually uses them. I’m still learning, but I take what I build seriously.
             </div>
 

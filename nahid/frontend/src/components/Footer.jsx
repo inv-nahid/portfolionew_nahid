@@ -44,7 +44,7 @@ const Footer = () => {
                 <div className="flex flex-wrap justify-center gap-5 text-white/60">
                     <a href="https://github.com/inv-nahid" target="_blank" rel="noreferrer"
                         className="flex items-center gap-2 hover:text-white transition-colors">
-                        <FaGithub size={22} className="hover:text-green-500 transition-colors duration-700" />
+                        <FaGithub size={22} className="hover:text-green-600 transition-colors duration-700" />
                         <p className="text-sm">GitHub</p>
                     </a>
 
@@ -62,7 +62,7 @@ const Footer = () => {
 
                     <a href="https://www.instagram.com/xizt_07" target="_blank" rel="noreferrer"
                         className="flex items-center gap-2 hover:text-white transition-colors">
-                        <FaInstagram size={22} className="hover:text-pink-600 transition-colors duration-700" />
+                        <FaInstagram size={22} className="hover:text-pink-700 transition-colors duration-700" />
                         <p className="text-sm">Instagram</p>
                     </a>
                 </div>

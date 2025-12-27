@@ -29,7 +29,7 @@ const Filler = () => {
             hover:text-red-500 hover:bg-black/45 hover:border-red-500
             transition-all duration-300"
                 >
-                    BLOG
+                    Blogs coming soon...
                 </button>
             </div>
         </div>

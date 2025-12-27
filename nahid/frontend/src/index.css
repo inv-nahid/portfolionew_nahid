@@ -4,6 +4,10 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* HOVER-TREMBLE EFFECT */
 /* @keyframes tremble {

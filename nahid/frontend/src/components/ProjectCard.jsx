@@ -1,4 +1,7 @@
-const ProjectCard = ({ category, title, duration, image }) => {
+import { FaGithub } from "react-icons/fa";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+
+const ProjectCard = ({ category, title, duration, image, links }) => {
     return (
         <div
             className="
@@ -32,8 +35,29 @@ const ProjectCard = ({ category, title, duration, image }) => {
                         <span>{duration}</span>
                     </div>
 
-                    <div className="text-lg">
-                        ↗
+                    {/* LINKS */}
+                    <div className="flex gap-3 text-xs sm:text-sm text-white/60 items-center">
+                        {links?.live && (
+                            <a
+                                href={links.live}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-1 transition-transform ease-out hover:scale-110 duration-700"
+                            >
+                                Live Demo <OpenInNewIcon fontSize="small" className="hover:text-red-500 transition-colors duration-700" />
+                            </a>
+                        )}
+
+                        {links?.github && (
+                            <a
+                                href={links.github}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-1 transition-transform ease-out hover:scale-110 duration-700"
+                            >
+                                GitHub <FaGithub size={18} className="hover:text-green-600 transition-colors duration-700" />
+                            </a>
+                        )}
                     </div>
                 </div>
             </div>
@@ -48,6 +72,7 @@ const ProjectCard = ({ category, title, duration, image }) => {
             >
                 <img
                     src={image}
+                    alt={title}
                     className="
                     w-full h-full
                     object-cover
@@ -60,4 +85,4 @@ const ProjectCard = ({ category, title, duration, image }) => {
     );
 };
 
-export default ProjectCard
+export default ProjectCard;
