@@ -7,7 +7,14 @@ import Gallery from '../components/Gallery'
 export const About = () => {
     return (
         <div className="min-h-screen bg-black text-white  py-48">
-            <div className="relative group h-78 w-69 rounded-[1.2px] bg-gradient-to-br from-white/80 via-white/60 to-white/40 mx-auto p-3">
+            <div className="
+            relative group h-78 w-69 
+            rounded-[1.2px] bg-gradient-to-br 
+            from-white/80 via-white/60 to-white/40 
+            mx-auto p-3
+            flex flex-col
+            "
+            >
                 <img
                     src={nahidsidemug}
                     alt="default"
@@ -18,6 +25,9 @@ export const About = () => {
                     alt="hover"
                     className="absolute inset-0 w-full h-64 object-cover px-3 pt-3 hidden group-hover:block"
                 />
+                <div className="mt-auto text-center font-['Homemade_Apple'] text-lg tracking-widest text-black">
+                    Nahid Azad
+                </div>
             </div>
 
             <div className="px-4 sm:px-6">
@@ -59,7 +69,7 @@ export const About = () => {
                 </div>
 
                 <div className='flex  flex-col justify-center items-center'>
-                    <h1 className='text-xl sm:text-2xl md:text-3xl lg:text-5xl mb-20 px-4'>
+                    <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl mb-20 px-4 font-['Homemade_Apple']">
                         Some moments from my life..
                     </h1>
 

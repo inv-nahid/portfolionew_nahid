@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 
 const fonts = [
-    "font-['Fjalla_One']",
-    "font-serif",
-    "font-mono",
-    "font-sans",
-    "font-['Playfair_Display']",
+    "font-['Metal']",
+    "font-['Neonderthaw']",
+    "font-['Doto']",
+    "font-['Schoolbell']",
+    "font-['Mrs_Saint_Delafield']",
 ];
 
 const IntentFontChange = () => {
@@ -14,7 +14,7 @@ const IntentFontChange = () => {
     useEffect(() => {
         const id = setInterval(() => {
             setIndex((i) => (i + 1) % fonts.length);
-        }, 900);
+        }, 1000);
 
         return () => clearInterval(id);
     }, []);
@@ -23,7 +23,7 @@ const IntentFontChange = () => {
         <span
             className={`${fonts[index]} transition-all duration-500`}
         >
-            INTENT
+            Intent
         </span>
     );
 };

@@ -20,9 +20,9 @@ const Hero = () => {
     mt-10 md:mt-13"
         >
             <div className="border-b border-white/20 flex items-end p-6 md:p-8
-            text-5xl sm:text-4xl md:text-5xl
+            text-5xl sm:text-5xl md:text-6xl
             font-['Fjalla_One']">
-                Nahid<br />Azad
+                Nahid Azad
             </div>
 
             <div
@@ -40,14 +40,14 @@ const Hero = () => {
                 <div className="relative flex h-full p-6 md:p-8
                 items-center justify-center
                 md:items-end md:justify-start
-                text-3xl sm:text-xl md:text-2xl
+                text-3xl 
                 text-center md:text-left"
                 >
                     <div className="flex flex-col">
                         <span className="font-['Fjalla_One'] py-2 leading-snug">
                             Every Detail Tells <br /> A Story With
                         </span>
-                        <span>
+                        <span className="text-4xl hover:text-red-700 transition-all ease-out hover:scale-110 duration-700">
                             <IntentFontChange />
                         </span>
                     </div>

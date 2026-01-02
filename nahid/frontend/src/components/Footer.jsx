@@ -36,7 +36,7 @@ const Footer = () => {
                 <div className="flex flex-col items-center text-center">
                     <div className="text-2xl sm:text-3xl font-['Metal']">Nahid Azad</div>
                     <div className="text-xs sm:text-sm text-white/60 max-w-xs">
-                        full-stack developer · problem solver · marlboro enjoyer
+                        web developer · problem solver · marlboro enjoyer
                     </div>
                 </div>
 
@@ -75,8 +75,7 @@ const Footer = () => {
         transition-colors
         px-4 py-2
         text-white/70
-        text-sm
-      "
+        text-sm"
                 >
                     <span>{copied ? "Email copied!" : "Copy my email"}</span>
                     <button onClick={handleCopy} aria-label="Copy email">
