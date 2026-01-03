@@ -7,6 +7,7 @@ const ExperienceCard = ({
     duration,
     description,
     tech,
+    certificate,
 }) => {
     return (
         <div
@@ -28,7 +29,7 @@ const ExperienceCard = ({
                     <p className="text-sm sm:text-base">{company}</p>
                     <p className="text-xs sm:text-sm">{duration}</p>
                 </div>
-                <CertificateButton href="#">View Certificate</CertificateButton>
+                <CertificateButton href={certificate || "#"}>View Certificate</CertificateButton>
             </div>
 
             <p className="text-white/70 leading-relaxed max-w-md text-sm sm:text-base">
