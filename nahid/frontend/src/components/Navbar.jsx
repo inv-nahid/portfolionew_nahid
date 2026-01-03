@@ -45,13 +45,13 @@ const Navbar = () => {
                         GITHUB
                     </a>
 
-                    <a href="../../public/NahidAzad_CSE_2026.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-red-500 transition-colors duration-500">
+                    <a href="/NahidAzad_CSE_2026.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-red-500 transition-colors duration-500">
                         RESUME
                     </a>
 
-                    <Link to="#" className="hover:text-red-500 transition-colors duration-500">
+                    {/* <Link to="#" className="hover:text-red-500 transition-colors duration-500">
                         BLOG
-                    </Link>
+                    </Link> */}
 
                 </div>
 
@@ -126,9 +126,9 @@ const Navbar = () => {
                 <a onClick={() => setOpen(false)} className="hover:text-red-500 transition-colors duration-500">
                     RESUME
                 </a>
-                <Link to="/blogs" onClick={() => setOpen(false)} className="hover:text-red-500 transition-colors duration-500">
+                {/* <Link to="/blogs" onClick={() => setOpen(false)} className="hover:text-red-500 transition-colors duration-500">
                     BLOG
-                </Link>
+                </Link> */}
             </div>
 
         </>
