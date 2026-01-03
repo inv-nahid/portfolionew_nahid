@@ -6,7 +6,7 @@ import Gallery from '../components/Gallery'
 
 export const About = () => {
     return (
-        <div className="min-h-screen bg-black text-white  py-48">
+        <div className="min-h-screen bg-black/80 text-white  py-48">
             <div className="
             relative group h-78 w-69 
             rounded-[1.2px] bg-gradient-to-br 

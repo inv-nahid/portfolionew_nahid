@@ -40,7 +40,7 @@ const RevealCard = ({ image }) => {
             absolute inset-0 w-full h-full object-cover
             grayscale
             hidden sm:block
-            [mask-image:radial-gradient(circle_270px_at_var(--x)_var(--y),transparent_0%,black_60%)]
+            [mask-image:radial-gradient(circle_200px_at_var(--x)_var(--y),transparent_0%,black_60%)]
             [mask-repeat:no-repeat]"
                 alt=""
             />

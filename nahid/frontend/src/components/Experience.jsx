@@ -21,6 +21,8 @@ const experiences = [
     }
 ]
 
+
+
 const Experience = () => {
     return (
         <section className="pt-16 sm:pt-24 pb-8 px-3 sm:px-6">
@@ -30,10 +32,10 @@ const Experience = () => {
 
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
                 {experiences.map((exp, index) => (
-                    <ExperienceCard
-                        key={index}
-                        {...exp}
-                    />
+                      <ExperienceCard
+                          key={index}
+                          {...exp}
+                      />
                 ))}
             </div>
         </section>
@@ -42,3 +44,4 @@ const Experience = () => {
 
 
 export default Experience
+

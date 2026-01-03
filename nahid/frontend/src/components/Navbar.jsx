@@ -17,7 +17,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 h-18 mb-12 font-['Fjalla_One'] tracking-widest bg-black/30 backdrop-blur-sm border-b border-white/10">
+            <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 h-18 mb-5 font-['Fjalla_One'] tracking-widest bg-black/30 backdrop-blur-sm border-b border-white/10">
                 <Link
                     to="/"
                     className="text-white font-semibold text-xl underline decoration-red-500 hover:text-red-500 transition-colors duration-500"
@@ -45,7 +45,7 @@ const Navbar = () => {
                         GITHUB
                     </a>
 
-                    <a className="hover:text-red-500 transition-colors duration-500">
+                    <a href="../../public/NahidAzad_CSE_2026.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-red-500 transition-colors duration-500">
                         RESUME
                     </a>
 

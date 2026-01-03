@@ -22,7 +22,7 @@ const FooterReveal = () => {
     return (
         <section
             ref={containerRef}
-            className="bg-black text-white flex flex-col items-center py-16 sm:py-24 px-4 text-center"
+            className="bg-black/80 text-white flex flex-col items-center py-16 sm:py-24 px-4 text-center"
         >
             {/* Vertical Line */}
             <div className="relative flex items-start">

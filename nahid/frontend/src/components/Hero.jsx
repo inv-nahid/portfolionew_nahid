@@ -1,10 +1,11 @@
 import contour from "../assets/contour.png";
-import img1 from "../assets/me3.jpeg";
-import img2 from "../assets/me3.jpeg";
-import img3 from "../assets/me3.jpeg";
-import img4 from "../assets/me3.jpeg";
+import img1 from "../assets/reveal1.jpg";
+import img2 from "../assets/reveal2.jpeg";
+import img3 from "../assets/reveal3.jpeg";
+import img4 from "../assets/reveal4.jpg";
 import IntentFontChange from "./IntentFontChange";
-
+import ShinyText from './ShinyText';
+import DecryptedText from './DecryptedText';
 import RevealCard from "./Revealcard";
 
 const Hero = () => {
@@ -17,12 +18,15 @@ const Hero = () => {
     md:grid-rows-2
     min-h-screen
     border-b border-white/20
-    mt-10 md:mt-13"
+    mt-10 md:mt-1"
         >
             <div className="border-b border-white/20 flex items-end p-6 md:p-8
             text-5xl sm:text-5xl md:text-6xl
             font-['Fjalla_One']">
-                Nahid Azad
+                <DecryptedText
+                    text="Nahid Azad"
+                    speed={110}
+                />
             </div>
 
             <div
@@ -55,7 +59,17 @@ const Hero = () => {
             </div>
 
             <div className="p-6 md:p-8 text-sm flex lg:justify-self-start lg:w-3/4 text-white/70 text-justify [hyphens:auto]">
-                I build things for the web and care about getting the details right. I don’t chase trends. I focus on making the ideas work, look intentional, and feel solid when someone actually uses them. I’m still learning, but I take what I build seriously.
+                <ShinyText
+                    text="I build things for the web and care about getting the details right. I don’t chase trends. I focus on making the ideas work, look intentional, and feel solid when someone actually uses them. I’m still learning, but I take what I build seriously."
+                    speed={2}
+                    delay={0}
+                    color="#b5b5b5"
+                    shineColor="#ffffff"
+                    spread={120}
+                    direction="left"
+                    yoyo={false}
+                    pauseOnHover={false}
+                />
             </div>
 
 

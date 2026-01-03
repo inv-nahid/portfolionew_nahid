@@ -8,7 +8,7 @@ import FooterReveal from "../components/FooterReveal"
 
 const Home = () => {
     return (
-        <div className="min-h-screen bg-black text-white px-8 py-8">
+        <div className="min-h-screen bg-black/80 text-white px-8 py-8">
             <main>
                 <Hero />
                 <Projects />
