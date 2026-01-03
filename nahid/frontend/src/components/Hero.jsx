@@ -20,7 +20,7 @@ const Hero = () => {
     border-b border-white/20
     mt-10 md:mt-1"
         >
-            <div className="border-b border-white/20 flex items-end p-6 md:p-8
+            <div className="border-b border-white/20 flex items-end justify-center md:justify-start p-6 md:p-8 pb-13 md:pb-6
             text-5xl sm:text-5xl md:text-6xl
             font-['Fjalla_One']">
                 <DecryptedText
@@ -58,9 +58,9 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className="p-6 md:p-8 text-sm flex lg:justify-self-start lg:w-3/4 text-white/70 text-justify [hyphens:auto]">
+            <div className="p-6 md:p-8 pb-16 md:pb-8 text-sm flex justify-center md:justify-start lg:justify-self-start lg:w-3/4 text-white/70 text-justify [hyphens:auto]">
                 <ShinyText
-                    text="I build things for the web and care about getting the details right. I don’t chase trends. I focus on making the ideas work, look intentional, and feel solid when someone actually uses them. I’m still learning, but I take what I build seriously."
+                    text="I build things for the web and care about getting the details right. I don't chase trends. I focus on making the ideas work, look intentional, and feel solid when someone actually uses them. I'm still learning, but I take what I build seriously."
                     speed={2}
                     delay={0}
                     color="#b5b5b5"

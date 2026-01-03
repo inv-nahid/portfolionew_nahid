@@ -10,6 +10,16 @@ const Cursor = () => {
 
     useEffect(() => {
         const cursor = cursorRef.current
+        
+        // Check if device has a pointer (mouse) - only show cursor on devices with pointer
+        const hasPointer = window.matchMedia("(pointer: fine)").matches
+        
+        // Also check screen size as fallback (lg breakpoint is 1024px)
+        const isLargeScreen = window.innerWidth >= 1024
+        
+        if (!hasPointer || !isLargeScreen || !cursor) {
+            return
+        }
 
         const handleMouseMove = (e) => {
             mouseX = e.clientX;
@@ -67,6 +77,7 @@ const Cursor = () => {
         <div
             ref={cursorRef}
             className="
+        hidden lg:block
         fixed top-0 left-0 z-[9999] pointer-events-none
         w-4 h-4 -translate-x-1/2 -translate-y-1/2
         rounded-full
